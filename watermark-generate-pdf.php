@@ -59,17 +59,16 @@ $pdf = new PDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 12);
 
-$pdf->WriteHTML("CHINMAY KUMAR SAHU<br>Software Engineer");
 //$pdf->Cell( 200, 230, $reportSubtitle, 0);
 
-/*
+
 //MultiCell loop text
 $txt = "FPDF is a PHP class which allows to generate PDF files with pure PHP, that is to say " .
         "without using the PDFlib library. F from FPDF stands for Free: you may use it for any " .
         "kind of usage and modify it to suit your needs.\n\n";
 for ($i = 0; $i < 25; $i++){
     $pdf->MultiCell(0, 5, $txt, 0, 'J');
-} */
+}
 
 $pdf->Output(); //If you Leave blank then it should take default "I" i.e. Browser
 //$pdf->Output("sampleUpdated.pdf", 'D'); //Download the file. open dialogue window in browser to save, not open with PDF browser viewer
