@@ -139,7 +139,7 @@ PDFWatermarker enables you to add an image as a watermark to existing PDF files.
     
     $fullPathToFile = "chinmay235.pdf";
 
-class PDF extends PDF_Rotate {
+    class PDF extends PDF_Rotate {
 
     var $_tplIdx;
     
