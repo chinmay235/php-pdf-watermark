@@ -11,7 +11,10 @@ Using it, you can:
 
     
 
-[Click here](http://www.fpdf.org/en/download.php) to download fpdf latest fersion
+[Click here](http://www.fpdf.org/en/download.php) to download fpdf latest version
+
+[Click here](http://www.setasign.com/products/fpdi/downloads/) to download FPDI latest version
+
 
 ## Description
 PHP PDF Watermark is a library to load watermark images provided via URL image or entered text.  
