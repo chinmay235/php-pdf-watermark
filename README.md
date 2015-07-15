@@ -71,13 +71,13 @@ PDFWatermarker enables you to add an image as a watermark to existing PDF files.
         $this->Rotate($angle, $x, $y);
         $this->Text($x, $y, $txt);
         $this->Rotate(0);
-    }
+     }
 
-   }
+    }
   
   
   
-   $pdf = new PDF();
-   $pdf->AddPage();
-   $pdf->SetFont('Arial', '', 12);
-   $pdf->Output();
+    $pdf = new PDF();
+    $pdf->AddPage();
+    $pdf->SetFont('Arial', '', 12);
+    $pdf->Output();
