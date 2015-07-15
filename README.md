@@ -44,7 +44,7 @@ PDFWatermarker enables you to add an image as a watermark to existing PDF files.
             $cy = ($this->h - $y) * $this->k;
             $this->_out(sprintf('q %.5F %.5F %.5F %.5F %.2F %.2F cm 1 0 0 1 %.2F %.2F cm', $c, $s, -$s, $c, $cx, $cy, -$cx, -$cy));
         }
-    }
+     }
 
     function _endpage() {
         if ($this->angle != 0) {
@@ -54,9 +54,12 @@ PDFWatermarker enables you to add an image as a watermark to existing PDF files.
         parent::_endpage();
     }
 
-   }
+    }
   
-  class PDF extends PDF_Rotate {
+  
+  
+  
+    class PDF extends PDF_Rotate {
 
     function Header() {
         //Put the watermark
