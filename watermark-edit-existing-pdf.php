@@ -48,7 +48,7 @@ class PDF extends PDF_Rotate {
         $this->Image('http://chart.googleapis.com/chart?cht=p3&chd=t:60,40&chs=250x100&chl=Hello|World', 40, 100, 100, 0, 'PNG');
         $this->SetFont('Arial', 'B', 50);
         $this->SetTextColor(255, 192, 203);
-        $this->RotatedText(20, 230, 'Raddyx Technologies Pvt. Ltd.', 45);
+        $this->RotatedText(20, 230, 'Muvi Entertainment Pvt. Ltd.', 45);
         
         if (is_null($this->_tplIdx)) {
 
