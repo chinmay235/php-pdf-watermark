@@ -3,9 +3,12 @@
 require('fpdf/fpdf.php');
 require_once 'FPDI/fpdi.php';
 
-class PDF_Rotate extends FPDI {
+$fullPathToFile = "chinmay235.pdf";
 
-    var $angle = 0;
+class PDF extends FPDI {
+
+    public $_tplIdx;
+    public $angle = 0;
 
     function Rotate($angle, $x = -1, $y = -1) {
         if ($x == -1)
@@ -32,14 +35,6 @@ class PDF_Rotate extends FPDI {
         }
         parent::_endpage();
     }
-
-}
-
-$fullPathToFile = "chinmay235.pdf";
-
-class PDF extends PDF_Rotate {
-
-    var $_tplIdx;
     
     function Header() {
         global $fullPathToFile;
