@@ -1,6 +1,6 @@
 <?php
 //This page create a new pdf file by using fpdf.
-require('./src/WatermarkPDF.php');
+require('./vendor/WatermarkPDF/WatermarkPDF.php');
 
 $pdf = new WatermarkPDF(null,"CHINMAY KUMAR SAHU");
 $pdf->AddPage();

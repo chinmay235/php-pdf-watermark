@@ -1,6 +1,6 @@
 <?php
 //This page contains edit the existing file by using fpdi.
-require('./src/WatermarkPDF.php');
+require(__DIR__ . './vendor/WatermarkPDF/WatermarkPDF.php');
 # ==========================
 $pdfFile = "chinmay235.pdf";
 $watermarkText = "Chinmay Kumar Sahu";

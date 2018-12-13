@@ -1,7 +1,6 @@
 <?php
-
-require('vendor/fpdf/fpdf.php');
-require_once 'vendor/FPDI/fpdi.php';
+require(dirname(__DIR__) .'/fpdf/fpdf.php');
+require_once dirname(__DIR__) .'/FPDI/fpdi.php';
 
 class WatermarkPDF extends FPDI {
 
@@ -45,7 +44,7 @@ class WatermarkPDF extends FPDI {
 
     function Header() {
         //Put the watermark
-        $this->Image('http://chart.googleapis.com/chart?cht=p3&chd=t:60,40&chs=250x100&chl=Hello|World', 40, 100, 100, 0, 'PNG');
+        //$this->Image('http://chart.googleapis.com/chart?cht=p3&chd=t:60,40&chs=250x100&chl=Hello|World', 40, 100, 100, 0, 'PNG');
         $this->SetFont('Arial', 'B', 50);
         $this->SetTextColor(255, 192, 203);
         $this->RotatedText(20, 230, $this->rotatedText, 45);
